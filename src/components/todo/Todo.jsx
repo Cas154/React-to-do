@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import "./App.css";
+import React from "react";
 
-const Todo = (todo, index, completeTodo, removeTodo) => {
+
+const Todo = ({todo, index, completeTodo, removeTodo}) => {
     return (
         <div
           className="todo"
