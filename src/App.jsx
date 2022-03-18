@@ -7,30 +7,30 @@ const App = () => {
   const [todos, setTodos] = useState([
     {
       text: "Learn about React",
-      isCompleted: false
+      isCompleted: false,
     },
     {
       text: "Meet friend for lunch",
-      isCompleted: false
+      isCompleted: false,
     },
     {
       text: "Build really cool todo app",
-      isCompleted: false
-    }
+      isCompleted: false,
+    },
   ]);
 
-  const addTodo = text => {
+  const addTodo = (text) => {
     const newTodos = [...todos, { text }];
     setTodos(newTodos);
   };
 
-  const completeTodo = index => {
+  const completeTodo = (index) => {
     const newTodos = [...todos];
     newTodos[index].isCompleted = true;
     setTodos(newTodos);
   };
 
-  const removeTodo = index => {
+  const removeTodo = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
@@ -52,6 +52,6 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;
