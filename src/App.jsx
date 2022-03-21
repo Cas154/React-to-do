@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Todo from "./components/todo/Todo";
 import TodoForm from "./components/todoForm/TodoForm";
+import heading from "./components/Heading/heading";
 import "./App.css";
 
 const App = () => {
